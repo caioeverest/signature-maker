@@ -7,7 +7,8 @@ import (
 	"errors"
 	"encoding/json"
 	"fmt"
-	"./responder"
+
+	"github.com/caioever/signature-maker/handler/responder"
 )
 
 var fundamentalParamiters = []string{"imgLink", "orgName", "name", "role", "area", "address", "phone1", "phone2"}

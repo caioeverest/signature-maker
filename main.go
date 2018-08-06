@@ -4,9 +4,10 @@ import (
 	"fmt"
 	"net/http"
 
-	"./config"
-	"./routes"
 	"github.com/couchbase/goutils/logging"
+
+	"github.com/caioever/signature-maker/config"
+	"github.com/caioever/signature-maker/routes"
 )
 
 func main() {
