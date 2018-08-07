@@ -1,7 +1,7 @@
 ### signature-maker
 This project creates a simple email signature
 
-### How did I use this?
+### How do I use this?
 - First of all you need to clone the repository with the "go get"
 `go get https://github.com/caioever/signature-maker.git`
 
