@@ -3,7 +3,7 @@ This project creates a simple email signature
 
 ### How do I use this?
 - First of all you need to clone the repository with the "go get"
-`go get https://github.com/caioever/signature-maker.git`
+`go get github.com/caioever/signature-maker`
 
 - After cloning this repository you go at the folder and execute the following commands
 `export HTTP_PORT=80` First you need to set some port
