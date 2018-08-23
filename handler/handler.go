@@ -11,7 +11,7 @@ import (
 	"github.com/caioever/signature-maker/handler/responder"
 )
 
-var fundamentalParamiters = []string{"imgLink", "orgName", "name", "role", "area", "address", "phone1", "phone2"}
+var fundamentalParamiters = []string{"imgLink", "orgName", "name", "role", "area", "address", "phone1"}
 
 func CreateNewSignature(w http.ResponseWriter, r *http.Request) {
 
@@ -36,8 +36,8 @@ func CreateNewSignature(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	tel2 := m["phone2"]
-	if tel2 != nil {
+	_, ok := m["phone2"]
+	if ok {
 		tpl, _ := template.ParseFiles("./templates/model2.html")
 		w.WriteHeader(http.StatusOK)
 		tpl.Execute(w, m)
